@@ -11,7 +11,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:5000/api/auth/register', { name, email, password });
+      await axios.post('https://school-management-system-xs22.onrender.com/api/auth/register', { name, email, password });
       navigate('/login');
     } catch (err) {
       console.log(err);
